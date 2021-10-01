@@ -1,0 +1,99 @@
+/* // Extra small devices (portrait phones, less than 576px)
+    // No media query for `xs` since this is the default in Bootstrap*/
+
+/**************************************************/
+/* WRITE MOBILE STYLES AND GENERAL STYLES (fonts, colors etc.) HERE BEFORE THE FIRST BREAKPOINT */
+/**************************************************/
+body {
+}
+
+/* tidl. kaldet 'xs-' */
+body::before {
+  content: "Default. mobile/under 576px. Deafult i Bootstrap.";
+  padding: 1rem;
+  background-color: turquoise;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0.5;
+}
+
+/*  section {
+  margin-bottom: 30px;
+} */
+
+/**************************************************/
+/* Small devices (landscape phones, 576px and up) */
+/**************************************************/
+@media (min-width: 576px) {
+  body {
+  }
+
+  body::before {
+    content: "'sm-': lig el. over 576px.";
+    background-color: hotpink;
+  }
+
+  /* END "sm-" 576px and up */
+}
+
+/**************************************************/
+/* // Medium devices (tablets, 768px and up) */
+/**************************************************/
+@media (min-width: 768px) {
+  body {
+  }
+
+  body::before {
+    content: "'md': lig el. over 768px. ";
+    background-color: yellow;
+  }
+
+  /* END "md-" 768px and up */
+}
+
+/**************************************************/
+/* // Large devices (desktops, 992px and up) */
+/**************************************************/
+@media (min-width: 992px) {
+  body {
+  }
+
+  body::before {
+    content: "'lg': lig el. over 992px.";
+    background-color: peru;
+  }
+
+  /* END "lg-" 992px and up */
+}
+
+/**************************************************/
+/* // Extra large devices (large desktops, 1200px and up) */
+/**************************************************/
+@media (min-width: 1200px) {
+  body {
+  }
+
+  body::before {
+    content: "'xl': lig el. over 1200px.";
+    background-color: blue;
+  }
+
+  /* END "xl-" 1200px and up */
+}
+
+/**************************************************/
+/* // Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
+/**************************************************/
+@media (min-width: 1400px) {
+  body {
+  }
+
+  body::before {
+    content: "'xxl': lig el. over 1400px.";
+    background-color: yellowgreen;
+  }
+
+  /* END "xl-" 1400px and up */
+}

@@ -4,63 +4,135 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap");
 
 :root {
-  --bs-font-sans-serif: "Poiret One", cursive;
+  --bs-font-sans-serif: "Raleway", sans-serif;
+  --overskrift-font: "Poiret One", cursive;
+  --bs-body-font-weight: 300;
+
+  /* farver */
+  --bs-primary: #1a1a1a;
+  --bs-white: #fffff8;
 }
 
+/* afstanden efter et element i en row */
+.row {
+  --bs-gutter-y: 2rem;
+  margin-top: calc(var(--bs-gutter-y) * 1.5);
+}
+
+/* knappe styling */
+.knapper_style {
+  max-width: 30%;
+}
+
+/* styling af fonte */
+.hvid_skrift {
+  color: var(--bs-white);
+}
+
+h2 {
+  font-family: var(--overskrift-font);
+  text-align: center;
+}
+
+/* hero billede med dets baggrundsbillede */
 .baggrunds_billed_hero {
   background-image: url(img/skille_billed_skov.png);
   background-size: cover;
-  height: 100vh;
+  height: 93vh;
 }
 
-.flaske_h {
-  width: 50%;
+.baggrunds_billed_skiller {
+  background-image: url(img/skille_billed_skov.png);
+  background-size: cover;
+  height: 60vh;
+}
+
+#tekst_skille_billed {
+  background-color: var(--bs-primary);
+  transform: translateY(30%);
+}
+
+/* trejde sektion og baggrundsfarven på containeren*/
+#vi_anbefaler_opskrift {
+  background-color: var(--bs-primary);
+}
+
+/* slider til inforgrafik */
+.slider_design {
   height: auto;
-  place-self: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.carousel {
+  margin-top: 60%;
 }
 
 /**************************************************/
-/* Small devices (landscape phones, 576px and up) */
+/* sm Small devices (landscape phones, 576px and up) */
 /**************************************************/
 @media (min-width: 576px) {
+  #tekst_skille_billed {
+    transform: translateY(50%);
+  }
+
+  /* slider til inforgrafik */
+  .carousel {
+    margin-top: 42%;
+  }
 }
 
 /* END "sm-" 576px and up */
 
 /**************************************************/
-/* // Medium devices (tablets, 768px and up) */
+/* // md Medium devices (tablets, 768px and up) */
 /**************************************************/
 @media (min-width: 768px) {
   .baggrunds_billed_hero {
     background-image: url(img/splach_billed.png);
     background-size: cover;
-    height: 100vh;
+    height: 93vh;
+    background-position-x: 79%;
   }
 
-  .flaske_h {
-    width: 20%;
-    height: auto;
-    place-self: start;
+  .knapper_style {
+    max-width: 19%;
+  }
+
+  .inforgarfik_to {
+    margin-top: 20%;
   }
 }
 
 /* END "md-" 768px and up */
 /**************************************************/
-/* // Large devices (desktops, 992px and up) */
+/* // lg Large devices (desktops, 992px and up) */
 /**************************************************/
 @media (min-width: 992px) {
   /* END "lg-" 992px and up */
+  /* flaske billed under produktbeskrive, som kun vises på destop  */
+  .falsek_billede {
+    background-image: url(img/kirsebær_flasken.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 90vh;
+  }
+
+  .knapper_style {
+    max-width: 25%;
+  }
 }
 
 /**************************************************/
-/* // Extra large devices (large desktops, 1200px and up) */
+/* // xl Extra large devices (large desktops, 1200px and up) */
 /**************************************************/
 @media (min-width: 1200px) {
   /* END "xl-" 1200px and up */
 }
 
 /**************************************************/
-/* // Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
+/* // xxl Extra Extra large (XXL) devices (XXL screens, 1400px and up) */
 /**************************************************/
 @media (min-width: 1400px) {
   /* END "xxl-" 1400px and up */
