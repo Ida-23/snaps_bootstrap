@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -18,6 +18,38 @@
     <title>Far`s snaps</title>
   </head>
   <body>
+    <header>
+      <nav class="p-0 navbar navbar-expand-md navbar-light nav_baggrund">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="img/icon.png" alt="icon" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">hej</a>
+              <a class="nav-link" href="#baggrunds_skiller">Bryggerit</a>
+              <a class="nav-link" href="#ander_produkter_baggrund"
+                >Snaps varianter</a
+              >
+              <a class="nav-link" href="#konkurande_sektion">Vær med</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <main>
       <!-- hero billede -->
       <div class="container-fluid">
@@ -25,6 +57,7 @@
           id="splach"
           class="align-items-center baggrunds_billed_hero row"
         >
+          <div class="d-md-none d-lg-none d-xxl-none"></div>
           <div class="offset-3 col-6 offset-md-2 col-md-3 offset-lg-2 col-lg-2">
             <img
               class="img-fluid"
@@ -38,55 +71,72 @@
       <!-- indholdsdels begynder her -->
       <div class="container">
         <!-- Produkt beskrivelse -->
-        <section id="produkt_beskrivelse" class="row">
+        <section id="produkt_beskrivelse" class="row my-5">
           <div class="falsek_billede offset-lg-2 col-lg-3"></div>
           <div
-            class="
-              d-flex
-              align-items-center
-              p-5
-              pt-0
-              pb-0
-              col-12
-              offset-lg-1
-              col-lg-5
-            "
+            class="d-flex align-items-center p-0 col-12 offset-lg-1 col-lg-5"
           >
-            <p>
-              Haps haps se lige vores nye snaps. Lækkerbisken indeholder en
-              dejlig smag af solmodne røde kirsekbær, som bringer sommer, sol og
-              stemning til din gane. Kirstens`bær snaps har en stærk appel til
-              begge køn, for med den, er man altid i godt selskab og højt humør.
-              Den komplekst og raffinerede smag, stammer fra bær doneret fra
-              ejne og lokalbefolkningens haver. Men bare rolig du få ikke en på
-              bæret af Kirsten, selvom den indholder nogen af hendes
-              Kirsten´sbær. Høhøhø
-              <br />
-              <br />
-              <a href="#"
-                ><img
-                  class="knapper_style img-fluid col-12 col-md-4 col-lg-4 mb-4"
-                  src="img/koeb_knap.svg"
-                  alt="køb_knap"
-              /></a>
-            </p>
+            <div class="">
+              <div
+                class="
+                  d-none d-lg-block d-xl-none d-xxl-block
+                  ramme
+                  border border-bottom-0 border-end-0 border-dark
+                  d-
+                "
+              ></div>
+              <p class="p-3">
+                Haps haps se lige vores nye snaps. Lækkerbisken indeholder en
+                dejlig smag af solmodne røde kirsekbær, som bringer sommer, sol
+                og stemning til din gane. Kirstens`bær snaps har en stærk appel
+                til begge køn, for med den, er man altid i godt selskab og højt
+                humør. Den komplekst og raffinerede smag, stammer fra bær
+                doneret fra ejne og lokalbefolkningens haver. Men bare rolig du
+                få ikke en på bæret af Kirsten, selvom den indholder nogen af
+                hendes Kirsten´sbær. Høhøhø<br />
+              </p>
+
+              <div class="div_omkring_knap border border-2 border-dark p-1">
+                <button type="button" class="broder btn knap_style">
+                  KØB SNAPS
+                </button>
+              </div>
+            </div>
           </div>
         </section>
 
         <!-- infograik over snapsen indhold -->
-        <section id="firste_infografik" class="row mb-4 align-items-center">
+        <section id="firste_infografik" class="row my-5 align-items-center">
           <img
-            class="img-fluid col-12 col-md-4 col-lg-4 mb-4"
+            class="
+              img-fluid
+              col-12 col-md-4 col-lg-4
+              my-5
+              offset-xxl-1
+              col-xxl-3
+            "
             src="img/procent_info.png"
             alt="infofrafik"
           />
           <img
-            class="img-fluid col-12 col-md-4 col-lg-4 mb-4"
+            class="
+              border border-2 border-dark border-bottom-0 border-top-0
+              img-fluid
+              col-12 col-md-4 col-lg-4
+              my-5
+              col-xxl-3
+            "
             src="img/aroma_info.png"
             alt="infofrafik"
           />
           <img
-            class="img-fluid col-12 col-md-4 col-lg-4 mb-4"
+            class="
+              img-fluid
+              col-12 col-md-4 col-lg-4
+              my-5
+              right-offset-xxl-1
+              col-xxl-3
+            "
             src="img/temp_info.png"
             alt="infofrafik"
           />
@@ -95,19 +145,21 @@
 
       <!-- skeltionen med anbefaling og ide til opskrift -->
       <div class="container-fluid">
-        <section id="vi_anbefaler_opskrift" class="row">
+        <section id="vi_anbefaler_opskrift" class="row py-5">
           <div
             class="
               align-items-center
-              p-5
+              my-5
+              px-4
               col-12
               offset-md-0
               col-md-6
               offset-lg-1
-              col-lg-4
+              col-lg-5
             "
           >
-            <h2 class="hvid_skrift">Vi anbefaler</h2>
+            <h2 class="h2_anden_farve">Vi anbefaler</h2>
+
             <p class="hvid_skrift">
               Kirstens`bær er skabt til det gode selskab og de gode stunder,
               hvor søde sager er tilsted. Snapsen er det perfekt match til
@@ -118,16 +170,17 @@
           </div>
           <div
             class="
-              p-5
+              my-5
+              px-4
               align-items-center
               col-12
               offset-md-0
               col-md-6
-              offset-lg-1
-              col-lg-4
+              right-offset-lg-1
+              col-lg-5
             "
           >
-            <h2 class="hvid_skrift">Lækkerbiskner med denne lækkerbisken</h2>
+            <h2 class="h2_anden_farve">Lækkerbiskner med denne lækkerbisken</h2>
             <p class="hvid_skrift">
               Snapsen egner sig suverænt til søde sager, og den er mindst lige
               så god i en dessert. Vi hos Far`s snaps kan varmt anbefal snapsen
@@ -136,14 +189,19 @@
               kompleks smag på en helt ny måde.
               <br />
               <br />
-              <a href="#">
+              <!-- <a href="#">
                 <img
                   class="knapper_style img-fluid col-12 col-md-4 col-lg-4 mb-4"
                   src="img/opskrif_knap.svg"
                   alt="opskrift"
                 />
-              </a>
+              </a> -->
             </p>
+            <div class="div_omkring_knap_lys border border-2 border-light p-1">
+              <button type="button" class="broder btn_1 knap_style_lys">
+                SE OPSKRIFT
+              </button>
+            </div>
           </div>
         </section>
 
@@ -156,7 +214,7 @@
             id="tekst_skille_billed"
             class="
               align-self-end
-              p-5
+              p-4 p-xxl-5
               hvid_skrift
               offset-1
               col-10
@@ -164,7 +222,9 @@
               col-lg-6
             "
           >
-            <h2>Haps haps hvordan brygges Fars`s snaps</h2>
+            <h2 class="h2_anden_farve">
+              Haps haps hvordan brygges Fars`s snaps
+            </h2>
             <br />
             <p>
               Den hjemmebryggede snaps har i generationer, skabt stemning, hygge
@@ -178,17 +238,19 @@
         </section>
 
         <!-- inforgrafik til destop -->
-        <section class="inforgarfik_to row lign-items-center d-none d-md-block">
-          <div class="offset-1 col-10">
+        <section
+          class="inforgarfik_to row lign-items-center d-none d-md-block mb-5"
+        >
+          <div class="my-5 offset-1 col-10 offset-xxl-2 col-xxl-8">
             <img
-              class="img-fluid"
+              class="img-fluid my-5 pb-5"
               src="img/inforgrafik_2/infograf_2_rigtig.png"
               alt="anden inforgrafik"
             />
           </div>
         </section>
 
-        <!-- slider over infografik til mobil -->
+        <!-- slider over infografik til mobil, denne kode et tager fra getbootstrap.com -->
         <section class="d-md-none d-lg-none">
           <div
             id="carouselExampleCaptions"
@@ -236,12 +298,12 @@
                   class="d-block w-100 img-fluid"
                   alt="første infofrafik"
                 />
-                <div class="carousel-caption d-none d-md-block">
+                <!-- <div class="carousel-caption d-none d-md-block">
                   <h5>First slide label</h5>
                   <p>
                     Some representative placeholder content for the first slide.
                   </p>
-                </div>
+                </div> -->
               </div>
               <div class="carousel-item">
                 <img
@@ -249,13 +311,13 @@
                   class="d-block w-100 img-fluid"
                   alt="anden inforgrafik"
                 />
-                <div class="carousel-caption d-none d-md-block">
+                <!-- <div class="carousel-caption d-none d-md-block">
                   <h5>Second slide label</h5>
                   <p>
                     Some representative placeholder content for the second
                     slide.
                   </p>
-                </div>
+                </div> -->
               </div>
               <div class="carousel-item">
                 <img
@@ -263,12 +325,12 @@
                   class="d-block w-100 img-fluid"
                   alt="trejde infografik"
                 />
-                <div class="carousel-caption d-none d-md-block">
+                <!-- <div class="carousel-caption d-none d-md-block">
                   <h5>Third slide label</h5>
                   <p>
                     Some representative placeholder content for the third slide.
                   </p>
-                </div>
+                </div> -->
               </div>
               <div class="carousel-item">
                 <img
@@ -276,12 +338,12 @@
                   class="d-block w-100 img-fluid"
                   alt="fjerde infografik"
                 />
-                <div class="carousel-caption d-none d-md-block">
+                <!-- <div class="carousel-caption d-none d-md-block">
                   <h5>Third slide label</h5>
                   <p>
                     Some representative placeholder content for the third slide.
                   </p>
-                </div>
+                </div> -->
               </div>
               <div class="carousel-item">
                 <img
@@ -289,12 +351,12 @@
                   class="d-block w-100 img-fluid"
                   alt="femte infografik"
                 />
-                <div class="carousel-caption d-none d-md-block">
+                <!-- <div class="carousel-caption d-none d-md-block">
                   <h5>Third slide label</h5>
                   <p>
                     Some representative placeholder content for the third slide.
                   </p>
-                </div>
+                </div> -->
               </div>
             </div>
             <button
@@ -323,8 +385,163 @@
             </button>
           </div>
         </section>
+
+        <!-- andet skille billde -->
+        <section id="andet_skille_bille_sektion" class="row">
+          <div class="andet_skille_billed"></div>
+        </section>
+
+        <!-- andre produkter af snaps sektion-->
+        <section
+          id="ander_produkter_baggrund"
+          class="row hvid_skrift d-flex justify-content-center"
+        >
+          <div
+            class="
+              andre_produkt_overskrift
+              align-self-end
+              p-4
+              hvid_skrift
+              col-10 col-lg-6
+            "
+          >
+            <h2 class="h2_anden_farve">
+              Gør som mandlen og smut ind <br />
+              og se vores andre snapse
+            </h2>
+          </div>
+
+          <div class="mb-5 pb-5 row text-center">
+            <div
+              class="
+                col-6
+                offset-md-1
+                col-md-4
+                offset-lg-2
+                col-lg-3
+                d-felx
+                flex-column
+                mb-4
+              "
+            >
+              <img
+                class="img-fluid andre_produkter_img_size"
+                src="img/val_flasken.png"
+                alt="valnødde flasken"
+              />
+              <img
+                class="img-fluid pt-3 pb-3"
+                src="img/prdukt_cirkel_val.png"
+                alt="cirkel visning"
+              />
+              <h3>FAR`S SNAPS Valnots snaps</h3>
+              <p>
+                Har en rund og lækker smag af valnød. Passer godt til ostebordet
+                og det gode selskab.
+              </p>
+
+              <div
+                class="div_omkring_knap_lys border border-2 border-light p-1"
+              >
+                <button type="button" class="broder btn_1 knap_style_lys">
+                  LÆS MERE
+                </button>
+              </div>
+            </div>
+            <div
+              class="
+                col-6
+                offset-md-2
+                col-md-4 col-lg-3
+                d-felx
+                flex-column
+                mb-4
+              "
+            >
+              <img
+                class="img-fluid andre_produkter_img_size"
+                src="img/gran_flasken.png"
+                alt="valnødde flasken"
+              />
+              <img
+                class="img-fluid pt-3 pb-3"
+                src="img/produkt_cirkel_gran.png"
+                alt="cirkel visning"
+              />
+              <h3>FAR`S SNAPS Gran`de snaps</h3>
+              <p>
+                En mild smag af gran, som bringer julen helt til døren. Passer
+                godt til julebordets forskellige lækkerier.
+              </p>
+
+              <div
+                class="div_omkring_knap_lys border border-2 border-light p-1"
+              >
+                <button type="button" class="broder btn_1 knap_style_lys">
+                  LÆS MERE
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- side sektion med konkurance -->
+      <div class="container-fluid">
+        <section id="konkurande_sektion" class="konkurance_baggrund_billed row">
+          <div class="row mb-5">
+            <img
+              class="img-fluid d-md-none d-lg-none d-xxl-none"
+              src="img/kirse_slut_billed.png"
+              alt="kirsebær slut billed"
+            />
+          </div>
+
+          <div class="row my-5 col-12 offset-md-1 col-md-6 col-lg-5">
+            <h2>Du skal da med?</h2>
+            <p>
+              Da vi hos Far`s snaps elsker de røde bær, godt selskab og højt
+              humør, er vi i år at finde på Kertemindes Kirseværfestivalg. Her
+              hylder vi sammen de søde og saftige bær, den tredje weekend i
+              juli.
+              <br />
+
+              <a class="link_styling" href="#">
+                Få mere af vide om Kertemindes Kirseværfestivalg her</a
+              >
+
+              <br />
+              <br />
+
+              I den anledning, har vi stablet en lille konkurrence på benene, så
+              du har mulighed for at vinde vores snapse og andre lækkerbiskner.
+              Så tjek vores Facebook ud for mere information. Lille tip find
+              dine indre far jokes frem.
+            </p>
+
+            <div class="div_omkring_knap border border-2 border-dark p-1 ms-3">
+              <button type="button" class="broder btn knap_style">
+                LÆS MERE
+              </button>
+            </div>
+            <!-- <a href="#"
+              ><img
+                class="knapper_style img-fluid col-12 col-md-4 col-lg-4 mb-4"
+                src="img/leas_mere.svg"
+                alt="køb_knap"
+            /></a> -->
+          </div>
+        </section>
       </div>
     </main>
+
+    <div class="container-fluid footer_baggrund">
+      <footer class="">
+        <p class="text-center hvid_skrift py-4 mb-0">
+          Ida Sofie Papp Svendsen - Content Marketing opgave 2021
+        </p>
+      </footer>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
