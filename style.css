@@ -3,12 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap");
 
-.ramme {
-  height: 15%;
-  position: absolute;
-  width: 10%;
-}
-
 .btn_1 {
   display: inline-block;
   font-weight: 400;
@@ -36,7 +30,9 @@
   --bs-body-font-weight: 300;
   --bs-body-line-height: 1.8;
 
+  /* *********************** */
   /* farver */
+  /* *********************** */
   --bs-primary: #1a1a1a;
   --bs-white: #fffff8;
   --bs-body-bg: #fffff8;
@@ -44,10 +40,21 @@
   --bs-yellow: #dbbe94;
 }
 
+/* *********************** */
 /* nav styling */
+/* *********************** */
 .nav_baggrund {
   background-color: var(--bs-primary);
   --bs-bg-opacity: 0;
+}
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 0px;
+  border-radius: 0rem;
+  transition: box-shadow 0.15s ease-in-out;
 }
 
 .navbar-light .navbar-nav .nav-link,
@@ -60,7 +67,7 @@
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: var(--bs-green);
+  color: var(--bs-yellow);
 }
 
 .navbar-collapse {
@@ -80,11 +87,21 @@
   margin-left: 1.5rem;
 }
 
+.icon_størrelse {
+  width: 146px;
+  height: auto;
+}
+
+/* *********************** */
+/* footer styling */
+/* *********************** */
 .footer_baggrund {
   background-color: var(--bs-primary);
 }
 
+/* *********************** */
 /* link styling */
+/* *********************** */
 a {
   text-decoration: underline 2px;
   text-decoration-color: var(--bs-yellow);
@@ -97,7 +114,13 @@ a:hover {
   text-decoration-color: var(--bs-primary);
 }
 
-/* knap stylling  */
+/* *********************** */
+/* knappe styling */
+/* *********************** */
+.knapper_style {
+  max-width: 30%;
+  align-items: end;
+}
 .knap_style {
   color: var(--bs-yellow);
   background-color: var(--bs-primary);
@@ -128,6 +151,13 @@ a:hover {
 .div_omkring_knap_lys {
   width: fit-content;
   border-radius: 0.5rem;
+  margin: auto;
+  align-items: end;
+}
+
+.div_omkring_knap_lys_left {
+  width: fit-content;
+  border-radius: 0.5rem;
 }
 
 .div_omkring_knap_lys:hover {
@@ -138,24 +168,24 @@ a:hover {
   color: var(--bs-yellow);
 }
 
+/* *********************** */
 /* body baggrund styling */
+/* *********************** */
 body {
   background-color: var(--bs-body-bg);
 }
 
+/* *********************** */
 /* afstanden efter et element i en row */
+/* *********************** */
 .row {
   /* --bs-gutter-y: 2rem; */
   margin-top: calc(var(--bs-gutter-y) * 1.5);
 }
 
-/* knappe styling */
-.knapper_style {
-  max-width: 30%;
-  align-items: end;
-}
-
+/* *********************** */
 /* styling af fonte */
+/* *********************** */
 .hvid_skrift {
   color: var(--bs-white);
 }
@@ -179,30 +209,37 @@ h3 {
   font-size: 1.3rem;
 }
 
-/* hero billede med dets baggrundsbillede */
+/* *********************** */
+/* hero sektion og produktbeskrivelse */
+/* *********************** */
 .baggrunds_billed_hero {
-  /* background-image: url(img/skille_billed_skov.png); */
-  /* background-image: url(img/splach_billed.webp); */
-  background-image: url(img/inforgrafik_2/mobil_sklac_3.png);
+  background-image: url(img/hero_billed_lille_rette.png);
   background-size: cover;
   background-position-x: 50%;
   height: 93vh;
 }
 
-/* .forside_tekst {
-  color: var(--bs-white);
-  text-align: center;
-  font-family: var(--overskrift-font);
+/* produktbeskrivelsen på paddingen på teksten */
+.content {
+  padding: 10%;
 }
-.logo {
-  max-width: 70%;
-} */
 
+/* *********************** */
+/* trejde sketion, med anden infografik */
+/* *********************** */
+/* første skillebilled og teksten  */
 .baggrunds_billed_skiller {
-  background-image: url(img/baggrunds_billed_skov.jpg);
+  background-image: url(img/baggrunds_billed_skov.avif);
   background-size: cover;
   height: 60vh;
   background-position-y: bottom;
+
+  /* får forgrunden til at schroll henover billede */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+  width: 100vw;
+  max-height: 100vh;
 }
 
 #tekst_skille_billed {
@@ -210,24 +247,17 @@ h3 {
   transform: translateY(10%);
 }
 
-.andet_skille_billed {
-  background-image: url(img/baggrunds_billed_skov.webp);
-  background-size: cover;
-  height: 40vh;
-  background-position-y: center;
-}
-
-/* trejde sektion og baggrundsfarven på containeren*/
+/* baggrundsfarven på containeren*/
 #vi_anbefaler_opskrift,
 #ander_produkter_baggrund,
 baggrund {
   background-color: var(--bs-primary);
 }
 
-/* slider til inforgrafik */
+/* mobilslider til anden inforgrafik */
 .slider_design {
   height: auto;
-  width: 60%;
+  width: 74%;
   margin: 0 auto;
 }
 
@@ -241,8 +271,8 @@ baggrund {
 .carousel-control-prev-icon {
   background-color: var(--bs-green);
   border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   background-size: 50% 50%;
 }
 
@@ -254,16 +284,33 @@ baggrund {
   margin-bottom: -2rem;
 }
 
-.andre_produkter_img_size {
-  width: 70%;
-  height: auto;
-}
+/* *********************** */
+/* fjered sketion, med anden produkter*/
+/* *********************** */
+/* andet skillebilled o goverskrift */
+.andet_skille_billed {
+  background-image: url(img/andet_skille_billed.avif);
+  background-size: cover;
+  height: 40vh;
+  background-position-y: center;
 
-/* andre prdukter */
+  /* får forgrunden til at schroll henover billede */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  max-width: 100vw;
+  width: 100vw;
+  max-height: 100vh;
+}
 
 .andre_produkt_overskrift {
   background-color: var(--bs-primary);
   transform: translateY(-50%);
+}
+
+/* andre produkter og deres billed størrelse */
+.andre_produkter_img_size {
+  width: 70%;
+  height: auto;
 }
 
 /**************************************************/
@@ -288,17 +335,15 @@ baggrund {
 /* // md Medium devices (tablets, 768px and up) */
 /**************************************************/
 @media (min-width: 768px) {
+  /* hero sektionen padding på produktbeskrivelsen */
+  .content {
+    padding: 10% 15%;
+  }
+
   /* nav */
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 1.5rem;
     padding-left: 0.5rem;
-  }
-
-  .baggrunds_billed_hero {
-    background-image: url(img/splach_billed.webp);
-    background-size: cover;
-    height: 93vh;
-    background-position-x: 79%;
   }
 
   .knapper_style {
@@ -325,13 +370,55 @@ baggrund {
 /**************************************************/
 @media (min-width: 992px) {
   /* END "lg-" 992px and up */
-  /* flaske billed under produktbeskrive, som kun vises på destop  */
-  .falsek_billede {
-    background-image: url(img/kirsebær_flasken.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 90vh;
+
+  /* hero sektionen og dens styling */
+  .hero_sektion {
+    background-image: url(img/splach_billed.webp);
+    background-size: cover;
+    height: 89vh;
+    background-position-x: 79%;
+    background-position: 50%;
+
+    grid-column: 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
+    align-items: center;
+  }
+  .content {
+    grid-column: 2;
+    padding: 0%;
+  }
+  .hele_forste_sektion {
+    display: grid;
+    grid: auto / 1fr minmax(0, 900px) 1fr;
+    gap: 1rem 0;
+  }
+
+  .scroller {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-auto-rows: 1fr;
+  }
+
+  .scroller .hero_sektion {
+    padding-inline: max(1rem, 50vw - 900px / 2);
+  }
+
+  .blue {
+    background: var(--bs-white);
+  }
+
+  figure {
+    position: sticky;
+    inset-block-start: 0;
+    inset-block-end: 0;
+    padding-block: 3rem;
+  }
+
+  .hero_flaske {
+    inline-size: 100%;
   }
 
   .knapper_style {
