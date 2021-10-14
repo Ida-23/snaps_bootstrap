@@ -309,7 +309,7 @@ baggrund {
 
 /* andre produkter og deres billed størrelse */
 .andre_produkter_img_size {
-  width: 70%;
+  width: 38%;
   height: auto;
 }
 
@@ -361,6 +361,12 @@ baggrund {
     background-position: top right;
     margin-bottom: 33%;
     height: 42vh;
+  }
+
+  /* andre produkter og deres billed størrelse */
+  .andre_produkter_img_size {
+    width: 70%;
+    height: auto;
   }
 }
 
